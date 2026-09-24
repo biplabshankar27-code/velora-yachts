@@ -83,6 +83,7 @@ export default function Hero({ fleetOpen, menuOpen }: HeroProps) {
 
       <div style={{ position: 'fixed', inset: 0, zIndex: 20, pointerEvents: 'none' }}>
         <motion.div
+          className="hero-copy"
           variants={containerVariants}
           initial="hidden"
           animate={fleetOpen ? 'hidden' : 'visible'}
@@ -147,7 +148,6 @@ export default function Hero({ fleetOpen, menuOpen }: HeroProps) {
 
         {!scrolled && (
           <div
-          className="hero-copy"
           style={{
             position: 'absolute',
               bottom: 40,
