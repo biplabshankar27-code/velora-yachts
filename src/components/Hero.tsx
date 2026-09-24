@@ -189,6 +189,28 @@ export default function Hero({ fleetOpen, menuOpen }: HeroProps) {
         )}
       </div>
 
+      <a
+        className="glass-mid github-badge"
+        href="https://github.com/biplabshankar27-code/velora-yachts"
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 8,
+          padding: '0 18px',
+          height: 52,
+          borderRadius: 100,
+          fontSize: 9.5,
+          letterSpacing: '0.22em',
+          color: 'rgba(255,255,255,0.85)',
+          textDecoration: 'none',
+          cursor: 'pointer',
+        }}
+      >
+        GITHUB ↗
+      </a>
+
       <div
         className="glass-mid hero-cta"
         style={{

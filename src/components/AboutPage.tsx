@@ -136,8 +136,63 @@ export default function AboutPage({ isOpen, onClose }: AboutPageProps) {
           </motion.div>
         ))}
       </div>
+
+      <div
+        style={{
+          maxWidth: 720,
+          margin: '0 auto',
+          padding: 'clamp(32px,4vw,48px)',
+          paddingBottom: 'clamp(48px,6vw,80px)',
+        }}
+      >
+        <div
+          style={{
+            background: 'white',
+            border: '1px solid rgba(12,12,14,0.06)',
+            boxShadow: '0 2px 20px rgba(0,0,0,0.05)',
+            borderRadius: 4,
+            padding: 'clamp(24px,4vw,40px)',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            gap: 24,
+            flexWrap: 'wrap',
+          }}
+        >
+          <div>
+            <div style={{ fontSize: 10, letterSpacing: '0.3em', color: 'var(--accent)', marginBottom: 10 }}>
+              THIS WEBSITE
+            </div>
+            <div style={{ fontSize: 10, letterSpacing: '0.15em', lineHeight: 1.9, color: 'rgba(12,12,14,0.55)' }}>
+              OPEN-SOURCE FRONTEND — REACT 19 · VITE 8 · MOTION · GSAP · TAILWIND CSS
+            </div>
+          </div>
+          <a
+            href="https://github.com/biplabshankar27-code/velora-yachts"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              padding: '12px 28px',
+              fontSize: 9,
+              letterSpacing: '0.22em',
+              color: 'white',
+              background: 'var(--accent)',
+              border: 'none',
+              borderRadius: 2,
+              cursor: 'pointer',
+              textDecoration: 'none',
+              transition: 'background 0.3s ease',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = '#253f63')}
+            onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--accent)')}
+          >
+            VIEW SOURCE ↗
+          </a>
+        </div>
+      </div>
     </PageOverlay>
   )
 }
+
 
 
