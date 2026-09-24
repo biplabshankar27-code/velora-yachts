@@ -2,7 +2,7 @@
 
 A luxury single-page web experience for **VELORA**, a private yacht club. Built around full-bleed cinematic video, glassmorphism, editorial serif typography, and layered motion design.
 
-**Live:** https://velora-topaz-chi.vercel.app
+**Live:** https://velora-yacht-bspx.vercel.app
 **Repository:** https://github.com/biplabshankar27-code/velora-yachts
 
 ---
